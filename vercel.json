@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "outputDirectory": "src/frontend",
   "builds": [
     {
       "src": "src/frontend/index.html",
@@ -10,7 +9,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "src/frontend/index.html"
+      "dest": "src/frontend/$1"
     }
   ]
 }
