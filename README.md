@@ -44,3 +44,4 @@ minikube service frontend
 - Push to `develop` → tests run → Vercel preview deploy
 - Push to `staging` → tests run → Vercel staging deploy
 - Push to `main` → full pipeline → Vercel production deploy
+<!-- deployed from develop branch -->
