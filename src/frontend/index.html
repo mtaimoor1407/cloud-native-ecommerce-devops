@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopCloud — E-Commerce Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">🛒 ShopCloud</div>
+    <ul>
+      <li><a href="#users">Users</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#orders">Orders</a></li>
+      <li><a href="#notifications">Notifications</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <h1>Cloud-Native E-Commerce Platform</h1>
+    <p>Microservices Architecture · Docker · Kubernetes · Jenkins CI/CD</p>
+    <div class="status-badges">
+      <span class="badge green">User Service ✓</span>
+      <span class="badge green">Product Service ✓</span>
+      <span class="badge green">Order Service ✓</span>
+      <span class="badge green">Notification Service ✓</span>
+    </div>
+  </header>
+
+  <main>
+    <section id="users" class="card">
+      <h2>👤 User Service</h2>
+      <p>Handles user registration, login, and JWT authentication.</p>
+      <table>
+        <tr><th>ID</th><th>Name</th><th>Email</th><th>Status</th></tr>
+        <tr><td>1</td><td>Ali Hassan</td><td>ali@example.com</td><td><span class="badge green">Active</span></td></tr>
+        <tr><td>2</td><td>Sara Khan</td><td>sara@example.com</td><td><span class="badge green">Active</span></td></tr>
+      </table>
+    </section>
+
+    <section id="products" class="card">
+      <h2>📦 Product Service</h2>
+      <p>Manages product catalog, inventory, and CRUD operations.</p>
+      <table>
+        <tr><th>ID</th><th>Product</th><th>Price (PKR)</th><th>Stock</th></tr>
+        <tr><td>1</td><td>Laptop</td><td>85,000</td><td>10</td></tr>
+        <tr><td>2</td><td>Mouse</td><td>1,500</td><td>50</td></tr>
+        <tr><td>3</td><td>Keyboard</td><td>3,000</td><td>30</td></tr>
+      </table>
+    </section>
+
+    <section id="orders" class="card">
+      <h2>🧾 Order Service</h2>
+      <p>Processes orders and tracks real-time order status.</p>
+      <table>
+        <tr><th>Order ID</th><th>User</th><th>Product</th><th>Total</th><th>Status</th></tr>
+        <tr><td>#001</td><td>Ali Hassan</td><td>Laptop</td><td>PKR 85,000</td><td><span class="badge green">Confirmed</span></td></tr>
+        <tr><td>#002</td><td>Sara Khan</td><td>Keyboard</td><td>PKR 3,000</td><td><span class="badge yellow">Pending</span></td></tr>
+      </table>
+    </section>
+
+    <section id="notifications" class="card">
+      <h2>🔔 Notification Service</h2>
+      <p>Sends email/in-app notifications for order events.</p>
+      <ul class="notif-list">
+        <li>✉️ <strong>Ali Hassan</strong> — Order #001 confirmed! Your laptop is on its way.</li>
+        <li>📱 <strong>Sara Khan</strong> — Your order #002 is being processed.</li>
+        <li>🔔 <strong>System</strong> — All services healthy. Pipeline deployed successfully.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>🏗️ DevOps Architecture</h2>
+      <div class="arch-diagram">
+        <div class="arch-box blue">GitHub<br><small>Source Control</small></div>
+        <div class="arch-arrow">→</div>
+        <div class="arch-box orange">Jenkins<br><small>CI/CD Pipeline</small></div>
+        <div class="arch-arrow">→</div>
+        <div class="arch-box purple">Docker Hub<br><small>Image Registry</small></div>
+        <div class="arch-arrow">→</div>
+        <div class="arch-box green">Kubernetes<br><small>Orchestration</small></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>ShopCloud DevOps Project · COMSATS University Islamabad, Lahore Campus · BSCS 6th Semester</p>
+  </footer>
+</body>
+</html>
